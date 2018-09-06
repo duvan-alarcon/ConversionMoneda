@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/formulario"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/eNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre" />
+
+    <EditText
+        android:id="@+id/ePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/eRePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/repPassword"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/eCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rMasculino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/masculino" />
+
+        <RadioButton
+            android:id="@+id/rFemenino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/femenino" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bfecha"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/fechaNacimiento" />
+
+        <EditText
+            android:id="@+id/eFecha"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/sCiudades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/bici"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/bicicleta" />
+
+        <CheckBox
+            android:id="@+id/lee"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Leer" />
+
+        <CheckBox
+            android:id="@+id/pelis"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/peliculas" />
+
+        <CheckBox
+            android:id="@+id/baile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/bailar" />
+    </LinearLayout>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:onClick="guardarClicked"
+        android:text="@string/guardar" />
+
+    <TextView
+        android:id="@+id/tResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+
+
+
+
+</LinearLayout>

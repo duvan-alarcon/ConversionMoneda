@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/conversion"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle= "bold" />
+
+
+    <TextView
+        android:id="@+id/eMonedaOrigen"
+        android:layout_width="204dp"
+        android:layout_height="29dp"
+        android:textSize="18sp"
+        android:ems="10"
+        android:text="@string/MonedaOrigen"
+        android:textColor="@color/purple" />
+
+    <Spinner
+        android:id="@+id/sMonorig"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:entries="@array/Monedas" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="42dp" />
+
+    <TextView
+        android:id="@+id/eMondest"
+        android:layout_width="202dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:text="@string/Mondest"
+        android:textColor="@color/purple"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/sMondest"
+        android:layout_width="206dp"
+        android:layout_height="34dp"
+        android:entries="@array/Monedas" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="42dp" />
+
+    <EditText
+        android:id="@+id/eIngreseValor"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/bConvertir"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Convertir"
+        android:onClick="clickConvertir"/>
+
+    <TextView
+        android:id="@+id/tResultado"
+        android:layout_width="354dp"
+        android:layout_height="64dp"
+        android:text="Resultado"
+        android:textSize="20sp" />
+
+</LinearLayout>

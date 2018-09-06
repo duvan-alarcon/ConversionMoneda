@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ConversionMoneda</string>
+    <string name="Conversion">Conversion de Moneda</string>
+    <string name="MonedaOrigen">Moneda Origen</string>
+    <string name="eMonedaOrigen">Moneda Origen</string>
+    <string name="eConversion">Conversion</string>
+    <string name="conversion">Conversion</string>
+    <string name="monedaOrigen">Moneda origen</string>
+    <string name="monedaDestino">Moneda Destino</string>
+    <string name="Convertir">Convertir</string>
+    <string name="moneda">Moneda Origen-Destino</string>
+    <string name="Mondest">Moneda Destino</string>
+
+</resources>
